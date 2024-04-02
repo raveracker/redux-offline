@@ -5,6 +5,7 @@
   "main": "lib/index.js",
   "types": "./typings.d.ts",
   "scripts": {
+    "prepare": "npm run build",
     "build": "rm -rf lib && babel src --out-dir lib --ignore '**/__tests__/**'",
     "flow:start": "flow server",
     "flow:stop": "flow stop",
